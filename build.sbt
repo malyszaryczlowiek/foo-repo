@@ -9,8 +9,8 @@ credentials += Credentials(Path.userHome / ".sbt" / ".credentials")
 lazy val root = (project in file("."))
   .settings(
     name             := "foo-repo",
-    idePackagePrefix := Some("com.github.malyszaryczlowiek"),
-    organization     := "com.github.malyszaryczlowiek",
+    idePackagePrefix := Some("io.github.malyszaryczlowiek"),
+    organization     := "io.github.malyszaryczlowiek",
     libraryDependencies ++= Seq(
 
 //      "org.apache.spark" %% "spark-core"           % "3.3.0" % "provided",
