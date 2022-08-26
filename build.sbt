@@ -1,10 +1,16 @@
 ThisBuild / version := "0.1.0"
 ThisBuild / scalaVersion := "2.12.16"
 
+// publishTo := Some("Sonatype Snapshots Nexus" at "https://oss.sonatype.org/content/repositories/snapshots")
+// publishTo := Some(MavenCache("local-maven", file("./project/maven-repo/releases")))
+publishTo := sonatypePublishToBundle.value
+credentials += Credentials(Path.userHome / ".sbt" / ".credentials")
+
 lazy val root = (project in file("."))
   .settings(
-    name := "foo-repo",
+    name             := "foo-repo",
     idePackagePrefix := Some("com.github.malyszaryczlowiek"),
+    organization     := "com.github.malyszaryczlowiek",
     libraryDependencies ++= Seq(
 
 //      "org.apache.spark" %% "spark-core"           % "3.3.0" % "provided",
