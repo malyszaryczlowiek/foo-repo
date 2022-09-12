@@ -10,6 +10,7 @@ package io.github.malyszaryczlowiek
  *
  *
  *
+ * Onother new line
  */
 class Foo {
   override def toString: String = s"I'm Foo."
