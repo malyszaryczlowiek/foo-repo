@@ -34,9 +34,7 @@ ThisBuild / publishTo := {
 }
 ThisBuild / publishMavenStyle := true
 
-
-
-
+// removing empty new lines.
 
 lazy val root = (project in file("."))
   .aggregate(scala_2_12, scala_3_1)
