@@ -6,6 +6,9 @@ package io.github.malyszaryczlowiek
  * This is editted by someone else.
  * Now i have added something.
  * Onother new line
+ *
+ *
+ * And now i modfied again.
  */
 class Foo {
   override def toString: String = s"I'm Foo."
