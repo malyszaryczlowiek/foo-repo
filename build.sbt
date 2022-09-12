@@ -43,7 +43,7 @@ lazy val root = (project in file("."))
   .settings(
     // crossScalaVersions must be set to Nil on the aggregating project
     crossScalaVersions := Nil,
-    publish / skip     := true,
+    publish / skip     := true
   )
 
 lazy val scala212 = "2.12.16"
